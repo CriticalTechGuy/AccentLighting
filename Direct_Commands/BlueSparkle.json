@@ -1,5 +1,18 @@
-from bibliopixel.animation import BaseStripAnim
+import numpy, random
+from bibliopixel.animation import BaseStripAnim, BaseAnimation
+from bibliopixel.colors import conversions
+from bibliopixel import util
+from . Searchlights import Searchlights
+from . import distributions
 
+PROJECT = {
+    'layout': {
+        'simpixel': 'strip',
+        'num': 160,
+    },
+    'layout': 'strip',
+    'animation': {}
+}
 
 class BlueSparkle(BaseStringAnim):
     def __init__(self, *args, something=None, another=12, **kwds):
