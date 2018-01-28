@@ -1,26 +1,18 @@
-import numpy, random
-from bibliopixel.animation import BaseStripAnim, BaseAnimation
-from bibliopixel.colors import conversions
-from bibliopixel import util
-from . Searchlights import Searchlights
-from . import distributions
 
-PROJECT = {
-    'layout': {
-        'simpixel': 'strip',
-        'num': 160,
-    },
-    'layout': 'strip',
-    'animation': {}
+{
+    "dimensions": 160,
+    "animation": {
+        "length": 5,
+        "typename": "sequence",
+
+        "animations": [
+            {"typename": "@fade", "color": "0xff9900"},
+            {"typename": "@fade", "color": "0xcc6600"},
+            {"typename": "@fade", "color": "0xcccc00"},
+            {"typename": "@fade", "color": "0xffff00"},
+            {"typename": "@fade", "color": "0x666633"},
+            {"typename": "@fade", "color": "0xcc9900"},
+            {"typename": "@fade", "color": "0xffbf00"}
+        ]
+    }
 }
-
-class BlueSparkle(BaseStringAnim):
-    def __init__(self, *args, something=None, another=12, **kwds):
-        super().__init__(*args, **kwds)
-        self._colors = [colors.Blue]
-
-    def step(self, amt=1):
-       for i in range(self._led.numLEDs):
-            currentcolor = self._colors[amt+=i] 
-            self._led.set(i, currentcolor)
-       
