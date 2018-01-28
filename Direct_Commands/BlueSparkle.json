@@ -8,6 +8,6 @@ class BlueSparkle(BaseStringAnim):
 
     def step(self, amt=1):
        for i in range(self._led.numLEDs):
-            currentcolor = self._colors[self._step+=i] 
+            currentcolor = self._colors[amt+=i] 
             self._led.set(i, currentcolor)
-       self._step += amt
+       
