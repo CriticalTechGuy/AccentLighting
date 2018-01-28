@@ -1,0 +1,13 @@
+from bibliopixel.animation import BaseStripAnim
+
+
+class BlueSparkle(BaseStringAnim):
+    def __init__(self, *args, something=None, another=12, **kwds):
+        super().__init__(*args, **kwds)
+        self._colors = [colors.Blue]
+
+    def step(self, amt=1):
+       for i in range(self._led.numLEDs):
+            currentcolor = self._colors[self._step+=i] 
+            self._led.set(i, currentcolor)
+       self._step += amt
