@@ -3,6 +3,7 @@
     "dimensions": 160,
     "animation": {
         "length": 5,
-        "typename": "static", "color": "0xff9900"
+        "typename": "StripChannelTest", "color": "0xff9900"
     }
+    {"drivers": "SimPixel"}
 }
