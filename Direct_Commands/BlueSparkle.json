@@ -1,9 +1,17 @@
-
 {
-    "dimensions": 160,
     "animation": {
-        "length": 5,
-        "typename": "StripChannelTest", "color": "0xff9900"
-    }
-    {"drivers": "SimPixel"}
+        "typename": "sequence",
+        "length": [30, 45, 20, 10, 45],
+        "animations": [
+            {
+                "length": 3,
+                "typename": "sequence",
+
+                "animations": [
+                    {"typename": "@fade", "color": "0xff9900"}
+                    {
+                      "drivers": "simpixel"
+                    }
+                  }
+                }
 }
