@@ -3,8 +3,6 @@
     "dimensions": 160,
     "animation": {
         "length": 5,
-        "typename": "sequence",
-
-        
+        "typename": "sequence", "color": "0xff9900"
     }
 }
