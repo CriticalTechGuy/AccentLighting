@@ -1,17 +1,18 @@
 {
     "animation": {
-        "typename": "sequence",
-        "length": [30, 45, 20, 10, 45],
-        "animations": [
-            {
-                "length": 3,
-                "typename": "sequence",
+        "typename": "CustomAnimations.Fade"
+    },
+    "run": {
+        "fps": 30
+    },
+    "driver": {
+        "typename": "simpixel",
 
-                "animations": [
-                    {"typename": "@fade", "color": "0xff9900"}
-                    {
-                      "drivers": "simpixel"
-                    }
-                  }
-                }
+        "c_order": "RGB",
+        "num": 150
+    },
+    "layout": {
+        "typename": "strip",
+        "brightness": 256
+    }
 }
