@@ -1,20 +1,6 @@
 {
-    "driver": {
-        "typename": "bibliopixel.drivers.SimPixel.DriverSimPixel",
-        "num": 12
-    },
-
-    "layout": {
-        "typename": "bibliopixel.layout.strip.Strip"
-    },
-
-    "animation": {
-        "typename": "bibliopixel.animation.tests.StripChannelTest"
-    },
-
+    "animation": "bibliopixel.animation.tests.StripChannelTest",
     "run": {
         "max_steps": 5
-    },
-
-    "path": "/development/BiblioPixelAnimations"
+    }
 }
