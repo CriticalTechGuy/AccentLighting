@@ -14,3 +14,6 @@ class Fade(BaseStripAnim):
                           endpoint=False, dtype=int)
         self.color_list[:] = np.outer(env, self.mask)
         print(self.color_list)
+
+    def step(self, amt=1):
+        pass
