@@ -6,6 +6,8 @@
         ]
     },
 
+    "numbers": "float",
+
     "run": {
         "fps": 30
     }
